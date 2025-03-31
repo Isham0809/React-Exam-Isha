@@ -1,44 +1,42 @@
-# User Management CRUD Application
+# User Management System
 
-## Features ✨
-- **Read** users with dynamic table listing ✅
-- **Delete** users from the database ✅
-- **Search** users by Name, Email, or Phone ✅
-- **Pagination** with customizable records per page (5, 10, or 15) ✅
-- **Sorting & Filtering** when clicking on the filter icons ✅
+## 📌 Project Overview
+This project is a user management system built with React and Bootstrap that allows users to:
+- 🔍 Search user records by name, email, or phone.
+- 🔄 Sort users based on different fields.
+- 🗑️ Delete users.
+- 📃 Paginate user records.
+- 🔢 Select the number of records per page.
 
-## Technologies Used 🛠️
-- React.js ⚛️
-- Bootstrap 🎨
-- JSON Server (for mock backend) 🗄️
+## 🛠️ Technologies Used
+- ⚛️ **React** - Frontend UI framework
+- 🎨 **Bootstrap** - For responsive design
+- 🏗 **React-Bootstrap** - Bootstrap components in React
+- 🖼 **React Icons** - For sorting functionality
 
-## JSON Server Setup ⚙️
+## 🚀 Features
+- 🔎 **Search Functionality**: Users can search by name, email, or phone number.
+- 📊 **Sorting**: Allows sorting data in ascending or descending order.
+- 🔢 **Pagination**: Users can navigate through different pages.
+- 🔧 **Custom Records per Page**: Users can select the number of records displayed per page.
+- ❌ **Delete User**: Users can be removed from the list.
 
-Ensure you have `db.json` in the project root with the following structure:
-please start json server using npx json-server db.json
 
-```json
-{
-  "users": [
-    {
-      "id": 1,
-      "name": "John Doe",
-      "email": "johndoe@example.com",
-      "phone": "1234567890",
-      "image": "https://via.placeholder.com/100"
-    }
-  ]
-}
+### 3️⃣ Start the Server
+Ensure you have a backend running at `http://localhost:3000/userdata`. If you are using JSON Server, start it with:
+```sh
+npx json-server --watch db.json --port 3000
 ```
-
-## Usage 🚀
-- **Deleting Users:** Click the red trash icon 🗑️.
-- **Searching Users:** Use the search box 🔍.
-- **Filtering Users:** Click the sorting icons next to the column names.
-- **Pagination:** Use the dropdown to select how many records to display.
 
 ## Screenshots 📸
 ![image](https://github.com/user-attachments/assets/c3879d14-4c0b-44d4-baf5-a8760dfc6eaf)
+
+## 📝 API Endpoints
+| Method | Endpoint               | Description |
+|--------|------------------------|-------------|
+| GET    | /userdata              | Fetch all users |
+| DELETE | /userdata/:id          | Delete a user by ID |
+
 
 
 
