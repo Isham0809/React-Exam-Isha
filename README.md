@@ -1,12 +1,45 @@
-# React + Vite
+# User Management CRUD Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features ✨
+- **Read** users with dynamic table listing ✅
+- **Delete** users from the database ✅
+- **Search** users by Name, Email, or Phone ✅
+- **Pagination** with customizable records per page (5, 10, or 15) ✅
+- **Sorting & Filtering** when clicking on the filter icons ✅
 
-Currently, two official plugins are available:
+## Technologies Used 🛠️
+- React.js ⚛️
+- Bootstrap 🎨
+- JSON Server (for mock backend) 🗄️
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## JSON Server Setup ⚙️
 
-## Expanding the ESLint configuration
+Ensure you have `db.json` in the project root with the following structure:
+please start json server using npx json-server db.json
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```json
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "johndoe@example.com",
+      "phone": "1234567890",
+      "image": "https://via.placeholder.com/100"
+    }
+  ]
+}
+```
+
+## Usage 🚀
+- **Deleting Users:** Click the red trash icon 🗑️.
+- **Searching Users:** Use the search box 🔍.
+- **Filtering Users:** Click the sorting icons next to the column names.
+- **Pagination:** Use the dropdown to select how many records to display.
+
+## Screenshots 📸
+![image](https://github.com/user-attachments/assets/c3879d14-4c0b-44d4-baf5-a8760dfc6eaf)
+
+
+
+
